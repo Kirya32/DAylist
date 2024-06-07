@@ -20,7 +20,8 @@
                             <StackPanel>
                                 <TextBlock Text="{Binding Path=Name}"></TextBlock>
                                 <TextBlock Text="{Binding Path=Description}"></TextBlock>
-                                <Button>Удалить</Button>
+                                <Button Name="Change" Click="ButtonBase_OnClick" Content="{Binding Path=Change}"></Button>
+                                <Button  Name="BtnDelete" Click="BtnDelete_OnClick" Content="{Binding Path=Id}"></Button>
                             </StackPanel>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
